@@ -157,7 +157,7 @@ downloadFonts() {
         fontUrl="https://raw.githubusercontent.com/xero/figlet-fonts/master/$fontUrlSuffix"
 
         # Download font if not present
-        sudo wget --quiet -nc "$fontUrl" -O "/usr/share/figlet/$font" \
+        sudo wget --quiet -nc "$fontUrl" -O "/usr/share/figlet/fonts/$font" \
             && printf "\t%s\n" "Downloaded font: $font"
     done
 }
@@ -184,8 +184,8 @@ displayFonts() {
         printLineSeparator
         echo "$font"
         printLineSeparator
-#        figlet -t "$TEXT" -f "$font" # print with default color
-        figlet -t "$TEXT" -f "$font" | lolcat --spread 1.5 --force # print with rainbow color
+#        figlet -f "/usr/share/figlet/fonts/$font" -t "$TEXT" # print with default color
+        figlet -f "/usr/share/figlet/fonts/$font" -t "$TEXT" | lolcat --spread 1.5 --force # print with rainbow color
     done
 }
 
