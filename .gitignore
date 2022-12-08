@@ -1,0 +1,11 @@
+## Mac files ##
+.DS_Store
+
+## Log files ##
+*.log
+
+## Vagrant files ##
+.vagrant/
+
+## IDEA files ##
+*.idea
