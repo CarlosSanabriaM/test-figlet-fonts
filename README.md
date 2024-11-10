@@ -169,3 +169,30 @@ vagrant halt
 ```bash
 vagrant destroy
 ```
+
+## How I recorded the asciinema demo
+
+```bash
+# Install asciinema (on macOS)
+brew install asciinema
+
+# Start the VM
+cd test-figlet-fonts
+vagrant up
+
+# Record the demo (connect to the VM and exit)
+asciinema rec test-figlet-fonts-demo.cast
+vagrant ssh
+Ctrl-D
+asciinema play test-figlet-fonts-demo.cast
+
+# Authenticate to asciinema with my account and upload the demo
+asciinema auth
+asciinema upload test-figlet-fonts-demo.cast
+
+# Stop the VM
+vagrant halt
+
+# Destroy the VM
+vagrant destroy
+```
