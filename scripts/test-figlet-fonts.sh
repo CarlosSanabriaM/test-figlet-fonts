@@ -184,6 +184,7 @@ displayFonts() {
         printLineSeparator
         echo "$font"
         printLineSeparator
+        # Uncomment one of the following lines to print with or without rainbow color (or uncomment both =P)
 #        figlet -f "/usr/share/figlet/fonts/$font" -t "$TEXT" # print with default color
         figlet -f "/usr/share/figlet/fonts/$font" -t "$TEXT" | lolcat --spread 1.5 --force # print with rainbow color
     done
