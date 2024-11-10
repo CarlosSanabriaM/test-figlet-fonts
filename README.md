@@ -2,6 +2,8 @@
 
 This project contains a bash script that downloads and tests a bunch of fonts from the [figlet-fonts](https://github.com/xero/figlet-fonts) project.
 
+[![asciinema demo](https://asciinema.org/a/688462.svg)](https://asciinema.org/a/688462?autoplay=1)
+
 ## Prerequisites
 
 * [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
